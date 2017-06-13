@@ -6,7 +6,7 @@
   <meta name="description" content="This is a test chatbot for HR-EY">
   <meta name="author" content="Varnit Jain" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=trying">
-  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" media="screen" href="css/login.css">
 </head>
 <body>
 
@@ -18,35 +18,29 @@
 <!-- particles.js container -->
 <div id="particles-js">
 
-  <div id="Onscreen">
-
-    <img src="logo.png">
-    
-
-    <div id="oneline">
-      <h4 align="center">
-        This is some random text which is to be written bellow the header.<br/>
-        This is some random text which is to be.
-      </h4>
+    <div id="login_heading">
+      <h2 align="center">
+        Login
+      </h2>
     </div>
 
-    <a href="login.html">
-    <div class="box-1">
-      <div class="btn btn-one">
-        
-          <span>Login</span>
-        
-     </div>
+
+    <div id="loginForm" align="center">
+      <form method="post">
+        <input type="text" name="user" placeholder="Username" required="required" class="input-txt" /><br>
+          <input type="password" name="password" placeholder="Password" required="required" class="input-txt" />
+          <div class="login-footer">
+            <button type="submit" class="btn btn--right">Sign in  </button>
+          </div>
+      </form>
     </div>
-    </a>
+  
 
     <!--<div class="button-container-2">
       <span class="mas">Login</span>
       <button type="button" name="Hover">Login</button>
     </div>-->
 
-
-  </div>
 
 </div>
 
