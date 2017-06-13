@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chatbot</title>
+  <meta name="description" content="This is a test chatbot for HR-EY">
+  <meta name="author" content="Varnit Jain" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=trying">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+</head>
+<body>
+
+<!-- count particles 
+<div class="count-particles">
+  <span class="js-count-particles"></span> particles
+</div>-->
+
+<!-- particles.js container -->
+<div id="particles-js">
+
+  <div id="Onscreen">
+
+    <img src="logo.png">
+    
+
+    <div id="oneline">
+      <h4 align="center">
+        This is some random text which is to be written bellow the header.<br/>
+        This is some random text which is to be.
+      </h4>
+    </div>
+
+    <div class="box-1">
+      <div class="btn btn-one">
+        <span>Login</span>
+     </div>
+    </div>
+
+    <!--<div class="button-container-2">
+      <span class="mas">Login</span>
+      <button type="button" name="Hover">Login</button>
+    </div>-->
+
+
+  </div>
+
+</div>
+
+<!-- scripts -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+
+
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
