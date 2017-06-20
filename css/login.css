@@ -52,7 +52,7 @@ canvas{
 h4{
   height: 250px;
   position: absolute;
-  top: 56%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
